@@ -1,0 +1,180 @@
+.curriculum{
+    margin-top: 40px;
+    background:rgb(242, 226, 228,0.5) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.rowc1{
+    background-color: rgb(245, 224, 228);
+    padding: 0px 10px 0px 10px;
+    color:rgb(150, 48, 181);
+    border-radius: 30px;
+    text-transform:uppercase;
+    font-family: arial;
+    justify-content: center;
+}
+.rowc2{
+    font-family: Verdana;
+}
+.rowc2 h1{
+    color: black;
+}
+.rowc2 span{
+    background-image: linear-gradient(to right, #d214d9, #d88f46);
+    -webkit-background-clip: text; 
+    background-clip: text;
+    color: transparent;
+}
+.rowc3 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+}
+.section{
+    display: grid;
+    padding: 15px 15px 15px 15px;
+    font-family: arial;
+}
+.leftsec{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.leftsec h2,
+.leftsec p {
+    margin: 0;
+    margin-top: 5px;
+}
+.rightsec {
+    display: flex;
+    align-items: center;
+    grid-column: 2;
+    grid-row: 1;
+    justify-content: flex-end;
+}
+
+.rightsec button {
+    background: rgba(242, 226, 228, 0.5);
+    border-radius: 25px;
+    border: none;
+    color: rgb(150, 48, 181);
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    transition-duration: 0.2s;
+}
+.rightsec button:hover{
+    transform: scale(1.05);
+}
+.rightsec button img {
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+}
+
+
+@media (min-width: 993px){
+    .curriculum{
+        padding: 40px 40px 40px 40px;
+    }
+    .rowc1{
+        font-size: 14px;
+    }
+    .rowc2{
+        font-size: 18px;
+    }
+    .rowc3{
+        width: max-content;
+    }
+    .section{
+        width: 800px;
+        height: 90px;
+    }
+    .leftsec h2{
+        font-size: 21px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .curriculum{
+        padding: 40px 40px 40px 40px;
+    }
+    .rowc1{
+        font-size: 12px;
+    }
+    .rowc2{
+        font-size: 14px;
+    }
+    .section{
+        width: 650px;
+        text-align: left;
+    }
+    .leftsec h2{
+        font-size: 19px;
+    }
+    .leftsec p{
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .curriculum{
+        padding: 40px 40px 40px 40px;
+    }
+    .rowc1{
+        font-size: 10px;
+    }
+    .rowc2{
+        font-size: 12px;
+    }
+    .section{
+        width: 500px;
+        text-align: left;
+    }
+    .leftsec h2{
+        font-size: 18px;
+    }
+    .leftsec p{
+        font-size: 14px;
+    }
+}
+@media (max-width: 576px) {
+    .curriculum{
+        padding: 20px 50px 20px 20px;
+    }
+    .rowc1{
+        font-size: 9px;
+    }
+    .rowc2{
+        font-size: 10px;
+    }
+    .curriculum {
+        padding:20px 20px 20px 20px;
+        width: 92%;
+        margin: 0;
+    }
+    .section {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .leftsec h2{
+        font-size: 17px;
+    }
+    .leftsec p{
+        font-size: 13px;
+    }
+    .rightsec {
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .rightsec button{
+        border-radius: 10px;
+        width: 100%;
+    }
+}

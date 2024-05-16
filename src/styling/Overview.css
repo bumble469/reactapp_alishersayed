@@ -1,0 +1,235 @@
+.overview{
+    width: 100%;
+    padding-top: 40px;
+}
+.upper-part{
+    display: flex;
+    flex-direction: column;
+}
+.row1{
+    display: flex;
+    float: left;
+    width: max-content;
+    padding: 1px 7px 1px 7px;
+    border:2px solid rgb(255, 191, 0);
+    border-radius: 10px;
+    align-items: center;
+}
+.image{
+    margin-right:10px;
+    height: 20px;
+    width: 20px;
+}
+.row2{
+    display: flex;
+    float: left;
+    width: 400px;
+    text-align: left;
+}
+.row2 h1{
+    color:rgb(50, 49, 49);
+}
+.row2 span{
+    color:rgb(168, 14, 168);
+}
+.row3{
+    display: flex;
+    float: left;
+}
+.row4{
+    display: flex;
+    float: left;
+}
+.row4-div{
+    height: 30px;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    border: 1px solid rgb(154, 115, 8);
+    background-color: rgb(234, 226, 188);
+    color:rgb(124, 71, 6);
+    padding: 3px 3px 3px 3px;
+    font-size: small;
+}
+.star-image{
+    margin-right: 1px;
+    height: 20px;
+    width: 20px;
+}
+.row5 {
+    display: flex;
+    float: left;
+    margin-top: 25px;
+}
+.row5-btn1 {
+    background-color: rgb(168, 14, 168);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    transition-duration: 0.2s;
+    margin-right: 20px;
+}
+.row5-btn2{
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    color: rgb(168, 14, 168);
+    font-weight: bold;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    transition-duration: 0.2s;
+}
+.row5-btn1:hover,.row5-btn2:hover{
+    transform: scale(1.05);
+}
+.row5 button img {
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+}
+.lower-part {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    max-width: 100%;
+    overflow-x: auto;
+    color:rgb(168, 14, 168);
+    background: rgb(242, 226, 228,0.5);
+}
+
+.part {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.separator {
+    width: 2px;
+    height: 50px;
+    background-color: #ccc;
+    margin-right: 20px;
+}
+@media (min-width: 993px){
+    .upper-part{
+        padding: 20px 10px 10px 100px;
+    }
+    .row2{
+        width: 500px;
+    }
+    .row2 h1{
+        font-size:60px;
+    }
+    .row3{
+        font-size: 25px;
+    }
+    .row4-div{
+        margin-right: 15px;
+        font-size: 20px;
+        padding: 8px 14px 8px 14px;
+    }
+    .row5 button{
+        font-size: 18px;
+        margin-right: 15px;
+        height: 50px;
+    }
+    .lower-part{
+        margin-top: 40px;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .part{
+        margin-right: 10px;
+    }
+    .separator{
+        margin-right: 12px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .upper-part{
+        padding: 20px 10px 10px 70px;
+    }
+    .row1{
+        transform: scale(0.9);
+    }
+    .lower-part{
+        justify-content: space-between;
+    }
+    .part{
+        transform: scale(0.9);
+    }
+    .separator{
+        width: 1px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .upper-part{
+        padding: 20px 10px 10px 70px;
+    }
+    .row1{
+        transform: scale(0.8);
+    }
+    .lower-part{
+        justify-content: center;
+    }
+    .part{
+        transform: scale(0.7);
+        margin-right: 0px;
+    }
+    .separator{
+        transform: scale(0.7);
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 576px) {
+    .overview {
+        padding: 20px 10px;
+        width: 96%;
+    }
+
+    .upper-part {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row1 {
+        width: 100%;
+        padding: 5px;
+        display: flex; 
+        justify-content: center;
+        text-align: center;
+    }
+    .row2{
+        transform: scale(0.8);
+    }
+    .row4 div p{
+        transform: scale(0.9);
+    }
+    .row5 {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .row5 button {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        max-width: 300px;
+    }
+    .lower-part {
+        display: none;
+    }
+}
+
+

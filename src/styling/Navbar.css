@@ -1,0 +1,117 @@
+.navbar{
+    width: 100%;
+    display: grid;
+}
+.top-nav{
+    display: grid;
+    grid-row: 1;
+    padding: 10px 20px;
+    background-color: white;
+}
+.left-side{
+    grid-column: 1;
+}
+.logo{
+    float: left;
+    font-family: monospace;
+    font-weight: bold;
+}
+.right-side{
+    grid-column: 2;
+}
+.nav-buttons{
+    float: right;
+}
+.login-button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    color: rgb(168, 14, 168);
+    font-weight: bold;
+    font-family: arial;
+    transition-duration: 0.2s;
+}
+.login-button:hover{
+    transform: scale(1.04);
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.signup-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(168, 14, 168);
+    color: white;
+    font-weight: bold;
+    font-family: arial;
+    border-radius: 12px;
+    transition-duration: 0.2s;
+}
+.signup-button:hover{
+    transform: scale(1.04);
+}
+.bottom-nav {
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(41, 40, 40);
+    padding: 10px 0;
+}
+.bottom-nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.bottom-nav a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 993px) {
+    .logo {
+        font-size: 24px;
+    }
+    .login-button,
+    .signup-button,
+    .bottom-nav a {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .logo {
+        font-size: 20px;
+    }
+    .login-button,
+    .signup-button,
+    .bottom-nav a {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .logo {
+        font-size: 18px;
+    }
+    .login-button,
+    .signup-button,
+    .bottom-nav a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo {
+        font-size: 16px;
+    }
+    .login-button,
+    .signup-button,
+    .bottom-nav a {
+        font-size: 10px;
+    }
+}
+
